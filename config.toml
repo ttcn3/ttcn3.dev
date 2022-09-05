@@ -1,7 +1,7 @@
 baseURL = "https://ttcn3.dev/"
 languageCode = "en-us"
 title = "The TTCN-3 Language"
-theme = "fnordic"
+theme = "hugo-theme-fnordic"
 
 [menu]
   [[menu.main]]
