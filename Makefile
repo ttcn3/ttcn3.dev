@@ -5,8 +5,9 @@ all: build
 
 .PHONY: build
 build:
-	@mkdir -p "${DESTDIR}"
+	@mkdir -p "${DESTDIR}/syntax"
 	@cp -rvt "${DESTDIR}" assets content/*
+	@cp -rvt "${DESTDIR}/syntax/" content/index.html
 
 .PHONY: clean
 clean:
