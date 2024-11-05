@@ -14,9 +14,9 @@ ntt-update: ntt-pull-releases
 
 .PHONY: ntt-pull-releases
 ntt-pull-releases:
-	@mkdir -p "${APIDIR}/ntt/releases/"
-	curl 'https://api.github.com/repos/nokia/ntt/releases' > "${APIDIR}/ntt/releases/index.json"
-	curl 'https://api.github.com/repos/nokia/ntt/releases/latest' > "${APIDIR}/ntt/releases/latest.json"
+	@mkdir -p "${APIDIR}/ntt/releases/latest"
+	curl 'https://api.github.com/repos/nokia/ntt/releases?per_page=100' > "${APIDIR}/ntt/releases/index.json"
+	curl 'https://api.github.com/repos/nokia/ntt/releases/latest' > "${APIDIR}/ntt/releases/latest/index.json"
 
 .PHONY: clean
 clean:
