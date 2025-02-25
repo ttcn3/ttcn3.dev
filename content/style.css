@@ -1,0 +1,18 @@
+:root{
+  color-scheme: light dark;
+}
+
+* {
+  font-family: 'Helvetica', sans-serif;
+}
+
+body {
+  padding: 3%;
+  font-size: 18px;
+  line-height: 1.6;
+
+}
+
+p {
+  max-width: 80ch;
+}

@@ -1,10 +1,146 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-<meta http-equiv="refresh" content="0; url=https://ttcn-3.etsi.org"/>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>TTCN-3</title>
+	<meta name="color-scheme" content="light dark">
+	<link rel="stylesheet" href="style.css">
+	<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
+	<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+	<link rel="shortcut icon" href="/favicon.ico" />
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+	<link rel="manifest" href="/site.webmanifest" />
 </head>
 <body>
-Redirecting to docs at <a href="https://ttcn-3.etsi.org">https://ttcn-3.etsi.org</a>
+
+<h1>
+<picture>
+	<source srcset="logo-ttcn3.svg" media="(prefers-color-scheme: light)"/>
+	<source srcset="logo-ttcn3-inverted.svg"  media="(prefers-color-scheme: dark)"/>
+	<img src="logo-ttcn3.svg" alt="TTCN-3"/>
+</picture>
+</h1>
+
+<p><em>This is a community-driven open source project to make working with TTCN-3 more productive.</em></p>
+
+<h2>Get in touch</h2>
+<ul>
+	<li><p>
+	<a href="https://ttcn3.etsi.org/">TTCN-3 Standardization Home</a>:
+	The official TTCN-3 homepage provides the standard documents, tutorials and much more.
+	</p></li>
+
+	<li><p>
+	<a href="mailto:TTCN3@LIST.ETSI.ORG">TTCN-3 Mailing List</a>:
+	The official mailing list, for general questions and discussions.
+	</p></li>
+
+	<li><p>
+	<a href="https://labs.etsi.org/rep/mts/ttcn3/standard/-/issues">Change Requests</a>:
+	The official tracker for change requests, bug reports, ... for the TTCN-3 standard.<br>
+	Kindly read the <a href="https://labs.etsi.org/rep/mts/ttcn3/standard/-/blob/main/docs/how-to-make-a-change-request.md">howto</a> for more details.
+	</p></li>
+
+	<li><p>
+	<a href="https://www.reddit.com/r/ttcn3/">Reddit</a>:
+	The TTCN-3 subreddit, for all kinds of questions,
+	discussions and announcements.
+	</p></li>
+
+	<li><p>
+	<a href="https://stackoverflow.com/tags/ttcn">Stack Overflow</a>:
+	Developers and testers around the world helping each other out.
+	</p></li>
+
+	<li><p>
+	<a href="https://www.linkedin.com/groups/832497/">TTCN-3 Professionals (LinkedIn)</a>:
+	The TTCN-3 Professionals group on LinkedIn provides a platform for new ideas,
+	job offers, meetups and more.
+	</p></li>
+</ul>
+
+<h2 id="learning">Learning</h2>
+<h3 id="resources">Resources</h3>
+<ul>
+	<li><p>
+	<a href="https://ttcn-3.etsi.org/index.php/downloads/standards">Standards</a>:
+	The official TTCN-3 standard documents.
+	</p></li>
+
+	<li><p>
+	<a href="http://www.blukaktus.com/TTCN3QRC_viewme.pdf">Cheat Sheet (PDF)</a>:
+	A quick reference card for TTCN-3 provides you a good overview of the language syntax.</p></li>
+
+	<li><p>
+	<a href="https://www.trex.informatik.uni-goettingen.de/trac/wiki/TTCN3RefactoringCatalogue">Refactoring Catalog</a>:
+	This catalog provides a list of refactoring operations for TTCN-3 source code.</p></li>
+
+	<li><p>
+	<a href="https://ttcn-3.etsi.org/index.php/learn/tutorials">Tutorials</a>:
+	A collection of various tutorials for TTCN-3 curated by ETSI.</p></li>
+
+	<li><p>
+	<a href="https://forge.etsi.org/rep/mts/ttcn3-conformance-tests">Repository for TTCN-3 Conformance Tests</a>:
+	This working repository contains the sources for the TTCN-3 conformance tests.</p></li>
+
+	<li><p>
+	<a href="https://labs.etsi.org/rep/mts/ttcn3/standard">Repository for TTCN-3 Standard</a>:
+	This working repository provides the files needed to create the TTCN-3 standard.</p></li>
+
+	<li><p>
+	<a href="https://labs.etsi.org/rep/mts/ttcn3/standard/-/tree/main/docs/mantis">Mantis Archive</a>:
+	This folder contains the archived change requests for the TTCN-3 standard.</p></li>
+
+	<li><p>
+	<a href="https://labs.etsi.org/rep/mts/ttcn3/standard/-/tree/main/meetings">Meeting Minutes</a>:
+	This folder contains the summaries of the TTCN-3 work sessions.</p></li>
+</ul>
+
+<h3 id="test-suites-examples-and-libraries">Test Suites, Examples and Libraries</h3>
+<ul>
+	<li><p>
+	<a href="https://ttcn-3.etsi.org/index.php/downloads/standards/conformance-test-suites">TTCN-3 Conformance tests</a>:
+	Official TTCN-3 conformance tests.</p></li>
+
+	<li><p>
+	<a href="https://ttcn-3.etsi.org/index.php/downloads/publicts/publicts-3gpp">3GPP tests</a>:
+	UE test suites for 5G, LTE, IMS, UTRA, Positioning and MCS.</p></li>
+
+	<li><p>
+	<a href="https://ttcn-3.etsi.org/index.php/downloads/publicts/publicts-etsi">ETSI tests</a>:
+	Various test suites. IPv6, SIP, WiMax and more.</p></li>
+
+	<li><p>
+	<a href="https://git.onem2m.org/TST/ATS">oneM2M test suites</a>:
+	Service layer test suite.</p></li>
+
+	<li><p>
+	<a href="https://osmocom.org/projects/cellular-infrastructure/wiki/Titan_TTCN3_Testsuites">Osmocom Cellular Network tests</a>
+	(<a href="https://github.com/osmocom/osmo-ttcn3-hacks/tree/master">mirror</a>):
+	Osmocom cellular network tests.</p></li>
+
+	<li><p>
+	<a href="https://github.com/intel/net-test-suites">Intel Net test suites</a>:
+	TCP protocol test suite.</p></li>
+
+	<li><p>
+	<a href="https://ttcn-3.etsi.org/index.php/development/devexamples">ETSI Examples</a>:
+	TTCN-3 examples provided by ETSI.</p></li>
+
+	<li><p>
+	<a href="https://ttcn-3.etsi.org/index.php/development/devlibraries">ETSI Libraries</a>: Libraries with common code, messages and types.</p></li>
+</ul>
+
+<h3 id="naming-conventions">Project specific naming conventions:</h3>
+<ul>
+	<li><p>
+	<a href="https://ttcn-3.etsi.org/index.php/development/naming-convention/naming-convention-etsi">ETSI</a></p></li>
+	<li><p>
+	<a href="https://ttcn-3.etsi.org/index.php/development/naming-convention/naming-convention-3gpp">3GPP</a></p></li>
+	<li><p>
+	<a href="https://ttcn-3.etsi.org/index.php/development/naming-convention/naming-convention-wimax">WiMax</a></p></li>
+</ul>
 </body>
 </html>
