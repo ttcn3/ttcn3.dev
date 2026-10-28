@@ -2,16 +2,7 @@
 
 This is the source repository for https://ttcn3.dev/
 
-## Development
-
-Install dependencies:
-
-	npm install
-
-Run server:
-
-	npm run start
-
-* install Hugo
-* install firebase
-      npm install -g firebase-tools
+This page provides:
+ - release information for https://github.com/nokia/ntt
+ - Links to resources related to TTCN-3
+ - A redirect for the Go module ttcn3.dev/syntax
