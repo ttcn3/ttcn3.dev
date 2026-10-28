@@ -1,6 +1,17 @@
 # ttcn3.dev
 
-Static site for https://ttcn3.dev. Edit `content/` and `assets/`. `make build` copies them into `public/` and refreshes the JSON APIs. Do not hand-edit `public/`.
+https://ttcn3.dev is a hub for humans and agents who need TTCN-3 information: standards, skills, releases, and related resources. Edit `content/` and `assets/`. `make build` copies them into `public/` and refreshes the JSON APIs. Do not hand-edit `public/`.
+
+## What to publish
+
+Write for a person reading the page and for an agent fetching the same fact. Each entry has a stable URL and one sentence on what it is. Add structured data when the fact is a list.
+
+- Standards: `api/v1/standards/index.json`, refreshed by `make standards-update`.
+- ntt releases: `api/v1/ntt/releases/`.
+- Skills and other material: a stable path on this site, plus one line on what the reader gets from it.
+- Pages are a table of contents a person can scan. Link out to the source. Keep the local copy short.
+
+Publish only current, TTCN-3-relevant material. A person gets a clear link and a short description. An agent gets the same fact from that page or from the JSON file.
 
 ## How to build pages
 
