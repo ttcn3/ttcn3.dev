@@ -1,5 +1,26 @@
-:root{
+:root {
   color-scheme: light dark;
+  --text: #1b1d1f;
+  --muted: #4e555c;
+  --bg: #f5f6f7;
+  --card: #ffffff;
+  --line: #d5d9de;
+  --link: #0b4f8a;
+  --hover: #e7f0f8;
+  --zebra: #f3f6f9;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: #f2f4f6;
+    --muted: #c5ced6;
+    --bg: #121416;
+    --card: #1c2024;
+    --line: #343b42;
+    --link: #9dceff;
+    --hover: #2c343c;
+    --zebra: #22272c;
+  }
 }
 
 * {
@@ -7,12 +28,185 @@
 }
 
 body {
-  padding: 3%;
+  margin: 0;
+  padding: 1rem;
   font-size: 18px;
   line-height: 1.6;
+  background: var(--bg);
+  color: var(--text);
+}
 
+@media (min-width: 40rem) {
+  body {
+    padding: 2rem;
+  }
+}
+
+h1,
+picture {
+  display: block;
+  max-width: 100%;
+}
+
+h1 img {
+  width: min(100%, 22rem);
+  height: auto;
 }
 
 p {
   max-width: 80ch;
+}
+
+a {
+  color: var(--link);
+}
+
+a:visited {
+  color: var(--link);
+}
+
+.std-group {
+  margin: 1.35rem 0 0.55rem;
+  font-size: 1.05rem;
+}
+
+.std-group:first-child {
+  margin-top: 0.35rem;
+}
+
+.standards-panel {
+  max-width: 72rem;
+  margin: 0 0 0.5rem;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 0.7rem;
+  overflow: hidden;
+}
+
+.std-head {
+  display: none;
+}
+
+.standards {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.standards li + li {
+  border-top: 1px solid var(--line);
+}
+
+.standards li:nth-child(even) {
+  background: var(--zebra);
+}
+
+.standards a {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "part"
+    "number"
+    "date";
+  gap: 0.2rem;
+  padding: 0.95rem 1rem;
+  color: inherit;
+  text-decoration: none;
+}
+
+.standards a > * {
+  min-width: 0;
+}
+
+.standards a:hover {
+  background: var(--hover);
+}
+
+.standards a:focus-visible {
+  outline: 2px solid var(--link);
+  outline-offset: -2px;
+}
+
+.std-part {
+  grid-area: part;
+  color: var(--link);
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.16em;
+}
+
+.std-number {
+  grid-area: number;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.2rem 0.75rem;
+  align-items: baseline;
+  font-size: 0.92rem;
+}
+
+.std-number,
+.std-id,
+.std-version {
+  font-family: ui-monospace, "Cascadia Mono", "Segoe UI Mono", Menlo, Consolas, monospace;
+}
+
+.std-version,
+.std-date {
+  color: var(--muted);
+}
+
+.std-date {
+  grid-area: date;
+  font-size: 0.95rem;
+}
+
+.std-note {
+  margin-top: 0.75rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+@media (min-width: 40rem) {
+  .standards a {
+    grid-template-columns: 1fr auto;
+    grid-template-areas:
+      "part part"
+      "number date";
+    column-gap: 1.25rem;
+    align-items: baseline;
+  }
+
+  .std-date {
+    text-align: right;
+  }
+}
+
+@media (min-width: 56rem) {
+  .std-head,
+  .standards a {
+    grid-template-columns: minmax(0, 1fr) 17.5rem 10rem;
+    column-gap: 1.25rem;
+    align-items: baseline;
+  }
+
+  .std-head {
+    display: grid;
+    padding: 0.7rem 1rem 0.35rem;
+    border-bottom: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  .standards a {
+    grid-template-areas: "part number date";
+    padding: 0.85rem 1rem;
+  }
+
+  .std-date {
+    text-align: left;
+  }
 }

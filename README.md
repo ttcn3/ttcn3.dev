@@ -8,4 +8,4 @@ This page provides:
  - A redirect for the Go module ttcn3.dev/syntax
 
 Run `make standards-update` to refresh the current TTCN-3 standards from ETSI.
-It writes `public/api/v1/standards/index.json`. `make build` refreshes it.
+It writes `public/api/v1/standards/index.json`. `make build` refreshes that file and fills the standards section on the home page from it.

@@ -8,6 +8,7 @@ all: build
 build: ntt-update standards-update
 	@mkdir -p "${DESTDIR}"
 	@cp -rv --target="${DESTDIR}" assets content/*
+	python3 scripts/update-standards.py --from-json "${APIDIR}/standards/index.json" --inject "${DESTDIR}/index.html"
 
 # ntt-update updates all ntt related documents such as documentation or
 # update-API.
