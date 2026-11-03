@@ -65,6 +65,29 @@ a:visited {
   color: var(--link);
 }
 
+.release {
+  max-width: 72rem;
+  margin: 2rem 0;
+  padding: 1.15rem 1.15rem 0.35rem;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-left: 0.35rem solid var(--link);
+  border-radius: 0.7rem;
+}
+
+.release h2 {
+  margin-top: 0;
+}
+
+.release ul {
+  margin: 0.25rem 0 0.85rem;
+  padding-left: 1.25rem;
+}
+
+.release li p {
+  margin: 0.35rem 0;
+}
+
 .std-group {
   margin: 1.35rem 0 0.55rem;
   font-size: 1.05rem;
