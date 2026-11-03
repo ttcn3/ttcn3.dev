@@ -186,7 +186,7 @@ def render_panel(standards):
     for standard in standards:
         items.append(
             "\t<li>\n"
-            f'\t\t<a href="{html.escape(standard["url"], quote=True)}">\n'
+            f'\t\t<a href="{html.escape(standard["url"], quote=True)}" target="_blank" rel="noopener noreferrer">\n'
             f'\t\t\t<span class="std-part">{html.escape(display_title(standard["title"]))}</span>\n'
             "\t\t\t<span class=\"std-number\">"
             f'<span class="std-id">{html.escape(standard["number"])}</span> '
